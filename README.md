@@ -19,7 +19,6 @@ measure website performance, and assess the impact of product launches.
 
 # 1. Site traffic breakdown
 Objective: Cindy Sharp (CEO) requested a breakdown of traffic sources by UTM source, campaign, and referring domain.
-
 SELECT
   utm_source,
   utm_campaign,
