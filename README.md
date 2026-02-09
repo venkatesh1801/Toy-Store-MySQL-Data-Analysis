@@ -1,4 +1,4 @@
-# Toy-Store-MySQL-Data-Analysis
+<img width="1024" height="1536" alt="DAX CHEAT SHEET" src="https://github.com/user-attachments/assets/e4863862-d76e-43e2-8867-ea57217ff3e0" /><img width="3341" height="4801" alt="DAX Cheatsheet" src="https://github.com/user-attachments/assets/2ddc53ba-2e7c-4a39-b733-e1087c68f6ec" /># Toy-Store-MySQL-Data-Analysis
 
 Project Overview
 This project focuses on analyzing the eCommerce database of Kraven Toy Store, an online retailer that recently launched its first product.
@@ -37,8 +37,31 @@ GROUP BY
 ORDER BY
     sessions DESC;
 ```
-Query Result:
 <img width="486" height="212" alt="results_query1" src="https://github.com/user-attachments/assets/3108c261-741c-4786-a269-6d1fe79b86c9" />
+
+# 2. Gsearch Conversion Rate Analysis
+Objective: Tom Parmesan (Marketing Director) wanted to evaluate the conversion rate of "gsearch" traffic, expecting it to be at least 4%.
+Query:
+```sql
+SELECT
+   COUNT(DISTINCT ws.website_session_id) AS sessions,
+   COUNT(o.order_id) AS orders,
+   ROUND(
+       COUNT(o.order_id) * 100.0 / COUNT(DISTINCT ws.website_session_id), 
+       2
+   ) AS sessions_to_order_conversion_rate
+FROM
+   website_sessions ws
+LEFT JOIN
+   orders o
+ON 
+   o.website_session_id = ws.website_session_id
+WHERE
+   ws.created_at < '2012-04-14'
+```
+
+
+<img width="364" height="50" alt="results_query2" src="https://github.com/user-attachments/assets/aecaf395-6403-4d7d-b205-9890dcf8bd51" />
 
 
 
