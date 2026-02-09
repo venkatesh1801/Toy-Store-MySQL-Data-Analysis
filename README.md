@@ -19,8 +19,9 @@ measure website performance, and assess the impact of product launches.
 
 # 1. Site traffic breakdown
 Objective: Cindy Sharp (CEO) requested a breakdown of traffic sources by UTM source, campaign, and referring domain.
+Query:
 SELECT
-  utm_source,
+ utm_source,
   utm_campaign,
   http_referer,
   COUNT(website_sessions) AS sessions
@@ -35,6 +36,7 @@ GROUP BY
 ORDER BY sessions DESC;
 
 
+Query Result:
 <img width="486" height="212" alt="results_query1" src="https://github.com/user-attachments/assets/3108c261-741c-4786-a269-6d1fe79b86c9" />
 
 
