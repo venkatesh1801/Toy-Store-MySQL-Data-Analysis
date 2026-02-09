@@ -37,6 +37,8 @@ ORDER BY
 ```
 <img width="486" height="212" alt="results_query1" src="https://github.com/user-attachments/assets/3108c261-741c-4786-a269-6d1fe79b86c9" />
 
+Findings: The primary traffic source is "gsearch nonbrand" with 282,706 sessions, indicating a strong reliance on this channel for website traffic.
+
 # 2. Gsearch Conversion Rate Analysis
 Objective: Tom Parmesan (Marketing Director) wanted to evaluate the conversion rate of "gsearch" traffic, expecting it to be at least 4%.
 Query:
@@ -60,8 +62,8 @@ WHERE
 
 
 <img width="364" height="50" alt="results_query2" src="https://github.com/user-attachments/assets/aecaf395-6403-4d7d-b205-9890dcf8bd51" />
-# Findings: 
-The conversion rate was found to be 2.88%, below the target threshold of 4%, prompting a decision to reduce bids on this source.
+
+Findings: The conversion rate was found to be 2.88%, below the target threshold of 4%, prompting a decision to reduce bids on this source.
 
 # 3.Gsearch volume trends
 Objective: Following the bid reduction on "gsearch nonbrand," the team needed to assess if this change affected session counts.
@@ -80,6 +82,7 @@ GROUP BY
 ```
 
 <img width="205" height="200" alt="image" src="https://github.com/user-attachments/assets/e286e6e9-7af9-4e96-a5f1-fd82de226de1" />
+
 Findings: The analysis confirmed that "gsearch nonbrand" is sensitive to bid changes.
 
 # 4. Gsearch device level performance
@@ -108,6 +111,7 @@ GROUP BY
 
 ```
 <img width="472" height="70" alt="image" src="https://github.com/user-attachments/assets/620066bb-47fa-4f47-8228-4794128975bf" />
+
 Findings: Desktop users exhibited a higher conversion rate of 4.14% compared to mobile users at 0.92%.
 
 # 5. Gsearch device level trends
@@ -129,6 +133,7 @@ GROUP BY
 <img width="336" height="204" alt="image" src="https://github.com/user-attachments/assets/0a4a3927-70a1-4adb-855c-8c524a678dd4" />
 
 Findings: Desktop sessions consistently outperformed mobile sessions.
+
 ## Analyzing Website Traffic Sources and Optimizing the Bids
 # 6. Top Website Pages by Session Volume
 Objective
@@ -332,6 +337,7 @@ GROUP BY
 
 ```
 <img width="411" height="77" alt="image" src="https://github.com/user-attachments/assets/ada738d5-1b8d-457e-b338-31f39854d7e2" />
+
 Findings: It looks like the custom lander has a lower bounce rate with 53,22%, success!
 
 # 10. Landing Page Trend Analysis
@@ -385,6 +391,7 @@ GROUP BY
 
 ```
 <img width="461" height="335" alt="image" src="https://github.com/user-attachments/assets/45db8407-0e3a-4d35-adc2-1ca8dfb13f4c" />
+
 Findings: The sessions have been completed to the new lander page(/lander) and overall bounce rate has also decreased.
 
 # 11. Click Rates Across Key Pages
@@ -437,6 +444,7 @@ FROM total_sessions_for_each_page2;
 
 ```
 <img width="766" height="45" alt="image" src="https://github.com/user-attachments/assets/0e1fd9c4-d8b9-46e8-80df-4b06aa9ec6d8" />
+
 Findings: Looks like we should focus on the lander, Mr. Fuzzy page , and the billing page , which have the lowest click rates.
 
 # 12. Conversion Rates for Billing Pages
@@ -479,6 +487,7 @@ GROUP BY
 
 ```
 <img width="544" height="78" alt="image" src="https://github.com/user-attachments/assets/1f3666ac-76d7-4809-9106-5885384639aa" />
+
 Findings: The version of the billing page(/billing-2) has almost 63% conversion rate which is significantlly greater than previous billing page.
 
 ## Conclusion
