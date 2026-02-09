@@ -63,7 +63,7 @@ WHERE
 # Findings: 
 The conversion rate was found to be 2.88%, below the target threshold of 4%, prompting a decision to reduce bids on this source.
 
-#  Gsearch volume trends
+# 3.Gsearch volume trends
 Objective: Following the bid reduction on "gsearch nonbrand," the team needed to assess if this change affected session counts.
 ```sql
 SELECT
